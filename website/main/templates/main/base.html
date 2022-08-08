@@ -1,38 +1,13 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}Szheduler | APP {% endblock %}</title>
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon.png">
-    <!-- Remix icons -->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-    <!-- Swiper.js styles -->
-    <!-- Custom styles -->
-    {% load static %}
-    <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+    <title>{% block title %}Szheduler-WEB-APP{% endblock %}
+    </title>
 </head>
 <body>
-        <div class="login-card">
-            <div class="user-input">
-                <img src="{% static 'main/images/login.png' %}" width="250" height="170"  class="login-image" alt="">
-                <h2 class="welcome">Welcome Back!</h2>
-                <h6 class="log-in-text">Log in to your existant account of Szhedul</h6>
-                <form action="" class="login-form">
-                    <label for="new-username" class="label">Username</label>
-                    <input type="text" id="user-name" class="input input-username" name="user-name" placeholder=" Insert your username">
-
-                    <label for="new-password" class="label">Password</label>
-                    <input type="text" class="input input-username" name="pass-word" id="pass-word" placeholder="Insert your password">
-
-                    <input type="submit" value="Login" class="login-button">
-                </form>
-            </div>
-        </div>
-   
-
-   
-    <script src="{% static 'main/js/main.js' %}"></script>
+    
 </body>
 </html>

@@ -78,8 +78,12 @@ WSGI_APPLICATION = 'website.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'd5b09bjuciiidk',
+        'USER': 'pmwzxjnanplrhy',
+        'PASSWORD': '07379be72bbcaea9e8828db8c275389d9ebd4195450261e767cc46128d45e52c',
+        'HOST': 'ec2-54-161-255-125.compute-1.amazonaws.com',
+        'POST': '5432'
     }
 }
 
@@ -120,7 +124,11 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+LOGIN_REDIRECT_URL = '/home'
+LOGOUT_REDIRECT_URL = '/login'
